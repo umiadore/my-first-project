@@ -19,12 +19,12 @@ public class TransactionRecord {
 
     @Override
     public String toString() {
-        return "TransactionRecord{" +
-                "dateTime=" + dateTime +
-                ", amount=" + amount +
-                ", fromCurrency='" + fromCurrency + '\'' +
-                ", toCurrency='" + toCurrency + '\'' +
-                ", result=" + result +
-                '}';
+        return "Результат операции(й): " +
+                "[ Время: " + dateTime +
+                ", Сумма: " + amount +
+                ", Исходная валюта: '" + fromCurrency + '\'' +
+                ", Конечная валюта: '" + toCurrency + '\'' +
+                ", Итого: " + result +
+                ']';
     }
 }
