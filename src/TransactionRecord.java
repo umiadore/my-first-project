@@ -4,8 +4,8 @@ import java.time.chrono.ChronoLocalDateTime;
 
 public class TransactionRecord {
     private final LocalDateTime dateTime;
-    private final  double amount;
-    private final  String fromCurrency;
+    private final double amount;
+    private final String fromCurrency;
     private final String toCurrency;
     private final double result;
 

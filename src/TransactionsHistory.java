@@ -3,21 +3,22 @@ import java.util.List;
 
 public class TransactionsHistory {
 
-   private final List<TransactionRecord> records;
+    private final List<TransactionRecord> records;
 
-    public TransactionsHistory(List<TransactionRecord> records) {
+    public TransactionsHistory() {
         this.records = new ArrayList<>();
     }
 
-    public void addRecord(TransactionRecord record){
+    public void addRecord(TransactionRecord record) {
         records.add(record);
     }
-    public void printHistory(){
-        for (TransactionRecord record:records) {
+
+    public void printHistory() {
+        for (TransactionRecord record : records) {
             System.out.println(record);
-
         }
 
-        }
+
     }
+}
 
