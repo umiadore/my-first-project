@@ -5,7 +5,7 @@ public class Main {
 
     // здесь будет пользовательский интерфейс консольный
 
-    // введите сумма
+    // введите сумму
     // введите валюту
     // введите конечную валюту
     public static void main(String[] args) {
@@ -25,6 +25,20 @@ public class Main {
             double result = currencyConverter.exchange(amount, fromCurrency, toCurrency);
 
             System.out.println("Конечная сумма: " + result + " " + toCurrency);
+            System.out.println("------");
+
+            System.out.println("Хотите ливы посмотреть историю обмена?");
+
+            String reply = scanner.nextLine();
+            if (reply.equalsIgnoreCase("да")) {
+                currencyConverter.printTransactionHistory();
+            }
+            System.out.println("Хотите ли вы продолжить обмен?");
+            reply = scanner.nextLine();
+            if (reply.equalsIgnoreCase("нет")){
+                break;
+            }
         }
+
     }
 }

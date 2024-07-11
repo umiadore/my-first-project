@@ -23,4 +23,8 @@ public class CurrencyConverter {
         return result;
     }
 
+    public void printTransactionHistory () {
+        transactionsHistory.printHistory();
+    }
+
 }
