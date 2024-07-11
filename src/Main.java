@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Конечная сумма: " + result + " " + toCurrency);
             System.out.println("------");
 
-            System.out.println("Хотите ливы посмотреть историю обмена?");
+            System.out.println("Хотите ли вы посмотреть историю обмена?");
 
             String reply = scanner.nextLine();
             if (reply.equalsIgnoreCase("да")) {
