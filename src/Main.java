@@ -9,7 +9,7 @@ public class Main {
     // введите валюту
     // введите конечную валюту
     public static void main(String[] args) {
-        CurrencyConverter  currencyConverter = new CurrencyConverter();
+        CurrencyConverter currencyConverter = new CurrencyConverter();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -22,9 +22,9 @@ public class Main {
             System.out.println("Введите валюту, на которую хотите обменять: ");
             String toCurrency = scanner.nextLine().toUpperCase();
 
-            double result = currencyConverter.exchange(amount, fromCurrency,toCurrency);
+            double result = currencyConverter.exchange(amount, fromCurrency, toCurrency);
 
-            System.out.println("Конечная сумма: " + result + " " +  toCurrency);
+            System.out.println("Конечная сумма: " + result + " " + toCurrency);
         }
     }
 }
